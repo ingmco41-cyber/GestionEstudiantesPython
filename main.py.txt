@@ -1,0 +1,47 @@
+
+# Proyecto: Gestion de Estudiantes
+# Descripcion: Aplicacion sencilla que utiliza POO.
+
+# Declaracion de la clase Estudiante
+class Estudiante:
+
+    # Constructor: inicializa los datos del estudiante
+    def __init__(self, nombre, edad, carrera):
+        self.nombre = nombre
+        self.edad = edad
+        self.carrera = carrera
+
+    # Metodo para mostrar la informacion del estudiante
+    def mostrar_datos(self):
+        print("Nombre:", self.nombre)
+        print("Edad:", self.edad)
+        print("Carrera:", self.carrera)
+
+    # Metodo para mostrar un saludo personalizado
+    def saludar(self):
+        print(f"Hola, soy {self.nombre} y soy estudiante.")
+
+
+# Programa principal
+if __name__ == "__main__":
+
+    # Instanciacion de dos objetos
+    estudiante1 = Estudiante(
+        "Carlos", 20, "Ingenieria en Sistemas"
+    )
+
+    estudiante2 = Estudiante(
+        "Ana", 22, "Informatica"
+    )
+
+    # Mostrar los datos del primer estudiante
+    print("=== ESTUDIANTE 1 ===")
+    estudiante1.mostrar_datos()
+    estudiante1.saludar()
+
+    print("--------------------")
+
+    # Mostrar los datos del segundo estudiante
+    print("=== ESTUDIANTE 2 ===")
+    estudiante2.mostrar_datos()
+    estudiante2.saludar()
